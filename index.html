@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExpLab | Warehouse-Native Experimentation</title>
+    <meta
+      name="description"
+      content="ExpLab is an open-source, warehouse-native experimentation platform that runs statistical analysis directly on top of your existing data warehouse."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-lockup">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <div>
+            <div class="brand-name">ExpLab</div>
+            <div class="brand-subtitle">Open-source warehouse-native experimentation</div>
+          </div>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#why">Why</a>
+          <a href="#features">Features</a>
+          <a href="#github">GitHub</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-grid" aria-hidden="true"></div>
+          <div class="hero-copy" data-reveal>
+            <div class="eyebrow">&gt; open-source experimentation project</div>
+            <h1>Free, self-hosted experimentation on your own warehouse.</h1>
+            <p class="hero-text">
+              ExpLab is an open-source project for running experiment analysis directly on top of your own
+              warehouse. It is meant for teams that want a simple self-hosted starting point without paying
+              SaaS event fees or moving product data into a separate analytics vendor.
+            </p>
+            <div class="hero-highlights">
+              <span>Open source</span>
+              <span>Free to run</span>
+              <span>Self-hosted</span>
+            </div>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://github.com/anasfrh/ExpLab" target="_blank" rel="noreferrer">
+                View on GitHub
+              </a>
+              <a class="button button-secondary" href="#why">Why self-host it</a>
+            </div>
+          </div>
+
+          <div class="hero-panel" data-reveal>
+            <div class="panel-chrome">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="hero-metrics">
+              <article>
+                <span class="metric-label">Ownership</span>
+                <strong>Open source and self-hosted</strong>
+                <small>Run it on your own infrastructure and keep control over how it works</small>
+              </article>
+              <article>
+                <span class="metric-label">Cost model</span>
+                <strong>Free instead of MTU-priced</strong>
+                <small>No vendor pricing tied to tracked users or event volume</small>
+              </article>
+              <article>
+                <span class="metric-label">Data posture</span>
+                <strong>Privacy by architecture</strong>
+                <small>User events and revenue data stay in the warehouse you already run</small>
+              </article>
+            </div>
+            <div class="hero-note">
+              ExpLab queries your warehouse directly and also includes a built-in SQLite demo so the project
+              can be explored locally without extra setup.
+            </div>
+          </div>
+        </section>
+
+        <section class="signal-band" id="why">
+          <div class="band-copy" data-reveal>
+            <div class="section-tag">Why ExpLab</div>
+            <h2>Three reasons to use this instead of a hosted experimentation vendor.</h2>
+          </div>
+          <div class="feature-list feature-list-trimmed">
+            <article class="feature" data-reveal>
+              <span class="feature-index">01</span>
+              <h3>You keep the data path</h3>
+              <p>
+                Metrics and conversion events are queried directly from your own database, so sensitive product
+                data does not need to be copied into another analytics tool.
+              </p>
+            </article>
+            <article class="feature" data-reveal>
+              <span class="feature-index">02</span>
+              <h3>You control the cost</h3>
+              <p>
+                The project is open source and free to run, which means no MTU pricing and no event-volume tax
+                as usage grows.
+              </p>
+            </article>
+            <article class="feature" data-reveal>
+              <span class="feature-index">03</span>
+              <h3>You keep your own logic</h3>
+              <p>
+                Metric definitions, conversion logic, and experiment analysis stay close to the SQL your team
+                already trusts instead of being forced into a vendor model.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="workflow" id="features">
+          <div class="workflow-intro" data-reveal>
+            <div class="section-tag">What you get</div>
+            <h2>A practical starting point for running and reading experiments.</h2>
+          </div>
+          <div class="workflow-rail">
+            <article class="workflow-step" data-reveal>
+              <div class="step-number">1</div>
+              <h3>Warehouse-native analysis</h3>
+              <p>
+                Run statistical analysis where the data already lives, with SQLite included for demo and local
+                testing.
+              </p>
+            </article>
+            <article class="workflow-step" data-reveal>
+              <div class="step-number">2</div>
+              <h3>Statistical guardrails</h3>
+              <p>
+                Use primary, secondary, and guardrail metrics alongside SRM checks, balance diagnostics, and
+                multiple-testing corrections.
+              </p>
+            </article>
+            <article class="workflow-step" data-reveal>
+              <div class="step-number">3</div>
+              <h3>Configurable metrics</h3>
+              <p>
+                Tune winsorization, override experiment settings, and inspect the raw SQL when you need a
+                closer look.
+              </p>
+            </article>
+            <article class="workflow-step" data-reveal>
+              <div class="step-number">4</div>
+              <h3>Planning tools included</h3>
+              <p>
+                Use the power calculator and simulator to size experiments and test the project before wiring
+                a live warehouse.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="cta-block" id="github" data-reveal>
+          <div>
+            <div class="section-tag">Open source</div>
+            <h2>Read the repo, run it locally, and adapt it to the way your team works.</h2>
+          </div>
+          <a class="button button-primary button-wide" href="https://github.com/anasfrh/ExpLab" target="_blank" rel="noreferrer">
+            Open the ExpLab GitHub repository
+          </a>
+        </section>
+
+        <section class="origin-block" data-reveal>
+          <div class="origin-copy">
+            <div class="section-tag">Why It Stays Free</div>
+            <h2>Built with LLMs, released back to the people whose work made that possible.</h2>
+            <p>
+              ExpLab was built fully with LLMs using Codex and Gemini Pro. The project is free and open
+              source because modern LLMs exist in large part thanks to the enormous body of open software,
+              public writing, forums, mailing lists, and shared internet knowledge created by people over
+              many years.
+            </p>
+            <p>
+              In a market full of SaaS-shaped, vibe-coded tools, it felt more honest to make something that
+              gives back instead of closing it off. ExpLab started with one person, but it does not need to
+              stay owned by one person.
+            </p>
+            <p>
+              If it is useful to you, share it, star it, fork it, and change it however you need. Run it for
+              your team, reshape it for your stack, and take it somewhere better. The point is not just to use
+              it, but to let more people own it.
+            </p>
+          </div>
+          <div class="origin-actions">
+            <a class="button button-primary button-wide" href="https://github.com/anasfrh/ExpLab" target="_blank" rel="noreferrer">
+              Star or Fork ExpLab
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
