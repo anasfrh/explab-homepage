@@ -59,6 +59,12 @@ a.button {
   padding: 10px 0 24px;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
 .brand-lockup {
   display: flex;
   align-items: center;
@@ -105,6 +111,38 @@ a.button {
 }
 
 .site-nav a:hover {
+  color: var(--text);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.04);
   color: var(--text);
 }
 
@@ -507,9 +545,20 @@ h2 {
     padding-bottom: 16px;
   }
 
+  .header-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
   .site-nav {
     flex-wrap: wrap;
     gap: 12px;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
   }
 
   .hero h1,
